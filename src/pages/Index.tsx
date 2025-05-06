@@ -6,20 +6,20 @@ import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-gradient-to-b from-purple-50 to-indigo-100">
       {/* Навигация */}
       <nav className="bg-white/90 backdrop-blur-sm shadow-sm sticky top-0 z-10">
         <div className="container mx-auto flex justify-between items-center py-4">
-          <div className="font-bold text-xl flex items-center gap-2 text-indigo-700">
-            <Icon name="Bot" size={24} className="text-indigo-500" />
+          <div className="font-bold text-xl flex items-center gap-2 text-purple-700">
+            <Icon name="Bot" size={24} className="text-purple-500" />
             <span>АвтоПостер</span>
           </div>
           <div className="hidden md:flex items-center gap-6">
-            <a href="#features" className="text-gray-700 hover:text-indigo-600">Возможности</a>
-            <a href="#benefits" className="text-gray-700 hover:text-indigo-600">Преимущества</a>
-            <a href="#pricing" className="text-gray-700 hover:text-indigo-600">Цены</a>
+            <a href="#features" className="text-gray-700 hover:text-purple-600">Возможности</a>
+            <a href="#benefits" className="text-gray-700 hover:text-purple-600">Преимущества</a>
+            <a href="#pricing" className="text-gray-700 hover:text-purple-600">Цены</a>
           </div>
-          <Button className="bg-indigo-600 hover:bg-indigo-700">
+          <Button className="bg-purple-600 hover:bg-purple-700">
             <Icon name="MessageSquare" className="mr-2" size={16} />
             Написать нам
           </Button>
@@ -31,21 +31,21 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-10 items-center">
             <div className="space-y-6">
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-indigo-100 text-indigo-700 text-sm font-medium">
+              <div className="inline-flex items-center px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-sm font-medium">
                 <Icon name="Zap" size={16} className="mr-1" />
                 Автоматизируй свой заработок
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
-                Телеграм бот для <span className="text-indigo-600">автоматического постинга</span> контента
+                Телеграм бот для <span className="text-purple-600">автоматического постинга</span> контента
               </h1>
               <p className="text-lg text-gray-600">
                 Увеличь свой доход с партнерских программ, автоматизируя публикацию статей, постов и видео для привлечения бесплатного трафика без лишних усилий.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-indigo-600 hover:bg-indigo-700 shadow-lg">
+                <Button size="lg" className="bg-purple-600 hover:bg-purple-700 shadow-lg">
                   Начать зарабатывать
                 </Button>
-                <Button variant="outline" size="lg" className="border-indigo-200 text-indigo-600">
+                <Button variant="outline" size="lg" className="border-purple-200 text-purple-600">
                   <Icon name="Play" size={16} className="mr-2" />
                   Посмотреть демо
                 </Button>
@@ -59,7 +59,7 @@ const Index = () => {
               </div>
             </div>
             <div className="hidden md:block relative">
-              <div className="absolute -top-6 -left-6 w-20 h-20 bg-indigo-300 rounded-lg opacity-20"></div>
+              <div className="absolute -top-6 -left-6 w-20 h-20 bg-purple-300 rounded-lg opacity-20"></div>
               <div className="relative bg-white rounded-2xl shadow-xl p-6 border border-gray-100">
                 <img 
                   src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1774&q=80" 
@@ -67,7 +67,7 @@ const Index = () => {
                   className="w-full h-auto rounded-lg"
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 w-20 h-20 bg-indigo-500 rounded-lg opacity-20"></div>
+              <div className="absolute -bottom-6 -right-6 w-20 h-20 bg-purple-500 rounded-lg opacity-20"></div>
             </div>
           </div>
         </div>
@@ -103,8 +103,8 @@ const Index = () => {
             ].map((item, index) => (
               <Card key={index} className="border-none shadow-md hover:shadow-xl transition-all">
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-indigo-100 flex items-center justify-center mb-4">
-                    <Icon name={item.icon} size={24} className="text-indigo-600" />
+                  <div className="w-12 h-12 rounded-lg bg-purple-100 flex items-center justify-center mb-4">
+                    <Icon name={item.icon} size={24} className="text-purple-600" />
                   </div>
                   <CardTitle>{item.title}</CardTitle>
                 </CardHeader>
@@ -160,10 +160,10 @@ const Index = () => {
                 description: "Встроенный сократитель ссылок с UTM-метками"
               }
             ].map((item, index) => (
-              <Card key={index} className="border border-gray-200 hover:border-indigo-200 transition-all">
+              <Card key={index} className="border border-gray-200 hover:border-purple-200 transition-all">
                 <CardHeader>
                   <div className="flex items-center gap-3">
-                    <Icon name={item.icon} size={20} className="text-indigo-600" />
+                    <Icon name={item.icon} size={20} className="text-purple-600" />
                     <CardTitle className="text-xl">{item.title}</CardTitle>
                   </div>
                 </CardHeader>
@@ -234,9 +234,9 @@ const Index = () => {
                 variant: "outline"
               }
             ].map((plan, index) => (
-              <Card key={index} className={`border ${plan.popular ? 'border-indigo-500 shadow-lg shadow-indigo-100' : 'border-gray-200'} relative`}>
+              <Card key={index} className={`border ${plan.popular ? 'border-purple-500 shadow-lg shadow-purple-100' : 'border-gray-200'} relative`}>
                 {plan.popular && (
-                  <div className="absolute top-0 right-0 bg-indigo-500 text-white px-3 py-1 text-xs font-bold rounded-bl-lg rounded-tr-lg">
+                  <div className="absolute top-0 right-0 bg-purple-500 text-white px-3 py-1 text-xs font-bold rounded-bl-lg rounded-tr-lg">
                     Популярный
                   </div>
                 )}
@@ -261,7 +261,7 @@ const Index = () => {
                 <CardFooter>
                   <Button 
                     variant={plan.variant as "default" | "outline"} 
-                    className={`w-full ${plan.popular ? 'bg-indigo-600 hover:bg-indigo-700 text-white' : ''}`}
+                    className={`w-full ${plan.popular ? 'bg-purple-600 hover:bg-purple-700 text-white' : ''}`}
                   >
                     {plan.button}
                   </Button>
@@ -315,13 +315,13 @@ const Index = () => {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-indigo-600 text-white">
+      <section className="py-16 bg-purple-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-6">Готовы автоматизировать свой заработок?</h2>
-          <p className="text-indigo-100 max-w-2xl mx-auto mb-8">
+          <p className="text-purple-100 max-w-2xl mx-auto mb-8">
             Присоединяйтесь к тысячам партнеров, которые уже увеличили свой доход с помощью нашего бота
           </p>
-          <Button size="lg" className="bg-white text-indigo-600 hover:bg-gray-100">
+          <Button size="lg" className="bg-white text-purple-600 hover:bg-gray-100">
             Попробовать бесплатно 7 дней
           </Button>
         </div>
@@ -333,7 +333,7 @@ const Index = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="font-bold text-xl flex items-center gap-2 text-white mb-4">
-                <Icon name="Bot" size={24} className="text-indigo-400" />
+                <Icon name="Bot" size={24} className="text-purple-400" />
                 <span>АвтоПостер</span>
               </div>
               <p className="text-sm">
